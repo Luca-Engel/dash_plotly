@@ -7,7 +7,7 @@ import pandas as pd
 
 
 data = pd.read_csv(
-    './../data/final_dataset.csv',
+    './final_dataset.csv',
 )
 
 def count_languages(entry):

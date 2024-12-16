@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: dash-app
+    env: python
+    plan: free  # Choose your Render plan (free, starter, etc.)
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: PORT
+        value: 8080  # Default port for Render web services
