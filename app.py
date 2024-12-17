@@ -25,6 +25,7 @@ df_revenue = data.dropna(subset=['revenue']).query('revenue != 0')
 
 
 app = dash.Dash(__name__)
+server = app.server
 
 # Layout of the Dash app
 app.layout = html.Div([
