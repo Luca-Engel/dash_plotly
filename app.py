@@ -134,5 +134,7 @@ def update_graph(search_value):
 
 if __name__ == '__main__':
     print('Running the Dash app!')
-    app.run(debug=True)
+    # app.run(debug=True)
+    app.run_server(debug=True, port=8050, host='0.0.0.0')
+
     print('Dash app closed!')
